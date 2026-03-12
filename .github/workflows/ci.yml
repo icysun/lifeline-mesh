@@ -90,7 +90,7 @@ jobs:
 
       - name: Upload integration logs on failure
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: integration-logs
           path: artifacts/integration-test.log
@@ -145,7 +145,7 @@ jobs:
 
       - name: Upload Playwright traces/reports on failure
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: playwright-artifacts
           path: |
